@@ -1,0 +1,157 @@
+@media (max-width: 1420px) {
+   .map {
+      width: 500px;
+      height: 250px;
+   }
+}
+
+@media (max-width: 1220px) {
+   .input-box input, .input-box textarea {
+      padding: 0px;
+  }
+}
+@media (max-width: 1200px) {
+   .footer__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+}
+@media (max-width: 976px) {
+   body {
+      font-size: 14px;
+   }
+   .logo{
+      height: 60px;
+   }
+   .logo__title {
+      font-size: 16px;
+   }
+   .logo__subtitle {
+      font-size: 14px;
+   }
+   .main{
+      padding-top: 114px;
+   }
+}
+.burger-menu {
+   width: 34px;
+   height: 30px;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   z-index: 1000;
+}
+.burger-menu div {
+   width: 100%;
+   height: 6px;
+   background-color: #e0c645;
+   border-radius: 20px;
+}
+.bar1, .bar2, .bar3{
+   width: 100%;
+   height: 1px;
+   background-color: #fff;
+}
+.change .bar1 {
+   transform: rotate(-45deg) translate(-6px, 6px);
+}
+.change .bar2 {
+   opacity: 0;
+}
+.change .bar3 {
+   transform: rotate(45deg) translate(-11px, -11px);
+}
+.mobile-nav {
+   display: none;
+}
+.mobile-nav.active {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 500;
+   width: 100%;
+   height: 100vh;
+   background-color: #f7f7f7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.mobile-nav__list {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 50px;
+}
+.mobile-nav__link {
+   text-decoration: none;
+   color: #000;
+   font-size: 26px;
+   line-height: 32px;
+}
+body.noscroll {
+   overflow: hidden;
+}
+@media (max-width: 876px) {
+   .burger-menu {
+      display: flex;
+   }
+   .address-block {
+      display: none;
+   }
+   .contact-block {
+      display: none;
+   }
+   .header__bottom {
+      display: none;
+   }
+   .main {
+      padding-top: 72px;
+   }
+}
+@media (max-width: 755px) {
+   .download-block {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+   }
+   .download__text {
+      margin-right: 0px;
+   }
+}
+@media (max-width: 540px) {
+   .intro__title {
+      font-size: 46px;
+   }
+   .map {
+      width: 400px;
+   }
+}
+@media (max-width: 425px) {
+   .intro__title {
+      font-size: 36px;
+   }
+   .map {
+      width: 300px;
+   }
+}
+@media (max-width: 375px) {
+   .intro__title {
+      font-size: 32px;
+   }
+   .logo {
+      height: 50px;
+   }
+   .mobile-nav__link {
+      font-size: 20px;
+      line-height: 24px;
+   }
+   .logo__text {
+      display: none;
+   }
+   .main {
+      padding-top: 62px;
+   }
+}

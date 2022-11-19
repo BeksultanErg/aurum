@@ -1,0 +1,368 @@
+/* === Fonts === */
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Light'), local('Roboto-Light'),
+      url('../fonts/Roboto-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto'), local('Roboto-Regular'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Medium'), local('Roboto-Medium'),
+      url('../fonts/Roboto-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Bold'), local('Roboto-Bold'),
+      url('../fonts/Roboto-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+/* === Reset CSS === */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+   font-family: 'Roboto';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* === Header === */
+.header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 20;
+}
+.header__container {
+   max-width: 1470px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.header__top {
+   background-color: #f7f7f7;
+}
+.top__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 6px 0;
+}
+.logo-block {
+   display: flex;
+   align-items: center;
+}
+.logo {
+   display: block;
+   height: 80px;
+}
+.logo__text {
+   margin-left: 14px;
+}
+.logo__title {
+   font-size: 18px;
+   line-height: 22px;
+   text-transform: uppercase;
+}
+.logo__subtitle {
+   font-size: 16px;
+   line-height: 18px;
+}
+.mail {
+   margin-bottom: 6px;
+}
+.mail a{
+   text-decoration: none;
+   color: #000;
+}
+.contact-block {
+   display: flex;
+   align-items: center;
+}
+.whatsapp {
+   height: 20px;
+   margin-right: 12px;
+}
+.contact {
+   text-decoration: none;
+   color: #000;
+}
+.header__bottom {
+   width: 100%;
+   padding: 14px 0;
+   background-color: #e0c645;
+}
+.nav__list {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+}
+.nav__link {
+   text-decoration: none;
+   color: #000;
+}
+/* === Main Block === */
+.container {
+   max-width: 770px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+.main {
+   padding-top: 136px;
+}
+.intro {
+   position: relative;
+   width: 100%;
+   background-image: url('../img/about-page.jpeg');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* Обои 2-3-4-5 страниц */
+.page_wallpaper {
+   position: relative;
+   width: 100%;
+   background-image: url('../img/page_wallpaper.jpeg');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.intro__title {
+   color: #fff;
+   font-size: 72px;
+   font-weight: bold;
+   line-height: 78px;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 260px 0;
+   position: relative;
+   z-index: 10;
+}
+.overlay {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+}
+.m-bottom {
+   margin-bottom: 40px;
+}
+.title {
+   font-size: 20px;
+   line-height: 22px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+.text {
+   font-size: 18px;
+   font-weight: 200;
+   line-height: 1.55;
+   margin-bottom: 20px;
+}
+.list__container {
+   max-width: 728px;
+   margin: 0 auto;
+}
+.list {
+   list-style: disc;
+   margin-bottom: 20px;
+}
+.list-text {
+   font-size: 18px;
+   font-weight: 200;
+   line-height: 1.55;
+}
+.documents {
+   width: 100%;
+}
+.download-block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 80px 0;
+}
+.download-block {
+   border-bottom: 1px solid #aeaeae;
+}
+.download-block:last-child{
+   border-bottom: none;
+}
+.download__text {
+   font-size: 18px;
+   font-weight: 200;
+   margin-right: 40px
+}
+.download__btn {
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 20px;
+   padding: 18px 32px;
+   background-color: #e0c645;
+   text-align: center;
+}
+.accordion-block{
+   padding: 40px 0px 80px 0px;
+}
+.accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   font-size: 18px;
+   transition: 0.4s;
+}
+.accordion:after {
+   content: "\02795";
+   font-size: 10px;
+   color: #777;
+   float: right;
+   margin-left: 5px;
+}
+.active:after {
+   content: "\2796";
+}
+.active,
+.accordion:hover {
+   background-color: #ccc;
+}
+.panel {
+   padding: 0 18px;
+   background-color: white;
+   overflow: hidden;
+   max-height: 0;
+   transition: 0.3s ease-in-out;
+} 
+.footer {
+   width: 100%;
+   padding: 80px 0;
+   background-color: #e0c645;
+}
+.footer__container {
+   max-width: 1470px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.form{
+   width: 300px;
+}
+.input-box {
+   height: 50px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+.input-box input,
+.input-box textarea {
+   height: 100%;
+   width: 100%; 
+   border: none; 
+   border-radius: 5px;
+   background: #ffffff;
+   padding: 0 20px;
+   margin-bottom: 40px;
+}
+.input-box textarea {
+   resize: none;
+   padding: 20px;
+   font-family: "Roboto", sans-serif;
+}
+.message-box {
+min-height: 110px;
+}
+.input{
+   margin-bottom: 10px;
+}
+.label{
+   color: #fff;
+}
+.button {
+   display: inline-block;
+}
+.button{
+   color: #000;
+   font-size: 18px;
+   background: #ffffff;
+   outline: none;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 7px;
+   cursor: pointer;
+}
+.address__title {
+   margin-bottom: 2px;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 200;
+}
+.address__subtitle {
+   font-size: 18px;
+   line-height: 22px;
+   margin-bottom: 12px;
+}
+.address__subtitle a {
+   text-decoration: none;
+   color: #000;
+}
+.map {
+   width: 600px;
+   height: 300px;
+}
